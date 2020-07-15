@@ -28,6 +28,7 @@ yum install -y \
     python3
 
 log_info "Installing compute packages .."
+yum install -y stress
 yum install -y https://yum.osc.edu/ondemand/latest/ondemand-release-compute-latest-1-6.noarch.rpm
 yum install -y \
   ondemand-compute

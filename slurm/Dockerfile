@@ -10,5 +10,6 @@ COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 COPY pmlogger-supremm.config /etc/pcp/pmlogger/pmlogger-supremm.config
 COPY slurm-prolog.sh /usr/local/bin/slurm-prolog.sh
 COPY slurm-epilog.sh /usr/local/bin/slurm-epilog.sh
+COPY scripts /srv/slurm/scripts/
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 CMD ["frontend"]
